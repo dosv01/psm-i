@@ -1,48 +1,56 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md">
-      <h1>
-        PSM-I Assess
-      </h1>
-      <h5>{{totalPerguntas}} questões (e contando!)</h5>
-      <h6>Elaborado por: Danilo Santos e Matheus Pereira</h6>
-      <h6>Perguntas incluídas por: Danilo Santos</h6>
+  <div class="row justify-content-center  text-center">
+    <div class="col-md-8">
+      <img src="../assets/PSM1.jpg" alt="psm-i quiz" width="70%" class="img-fluid">
     </div>
-    <div class="col-md">
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <hr>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h5>{{totalPerguntas}} questões (e contando!)</h5>
+      <p><strong> Elaborado por:</strong> Danilo Santos e Matheus Pereira</p>
+      <p><strong>Perguntas incluídas por:</strong> Danilo Santos</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
       <label for="exampleFormControlSelect1">Qtd Questões</label>
       <select class="form-control" id="exampleFormControlSelect1" (ngModel)="quantidadePerguntas"
-        (change)="onChange($event.target.value)">
+        (change)="onChange($event.target.value)" style="width:auto;">
         <option>20</option>
         <option>40</option>
         <option>90</option>
       </select>
     </div>
   </div>
-  <!-- <div class="row mb-5">
-    <div class="col-md">
-      <div class="card" *ngIf="finalizado">
-        <div class="card-body">
-          <h1>Você acertou {{this.scoreFinal.toPrecision(2)}}% das questões.</h1>
-        </div>
-      </div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <hr>
     </div>
-  </div> -->
-  <hr>
+  </div>
   <form class="form" (submit)="calcularRespostas()">
-    <div class="row mb-5">
-      <div class="col-md">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8">
         <button class="btn btn-info float-right" type="submit">Finalizar</button>
         <button class="btn btn-light float-right mr-2" type="reset">Limpar</button>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
         <div class="card mb-3" *ngFor="let pergunta of perguntas; let i = index">
           <div class="card-header"
             [ngClass]="{'rightAnswer': (finalizado == true && pergunta.resposta === pergunta.correta), 'wrongAnswer': (finalizado == true && pergunta.resposta !== pergunta.correta)  }">
-            {{i+1}} - {{pergunta.pergunta}}
+            <h5>Questão {{i+1}} de {{quantidadePerguntas}}</h5>
           </div>
           <div class="card-body">
+            <div>
+              {{pergunta.pergunta}}
+              <hr style="border-top: dotted 1px  #ccc;">
+            </div>
             <div class="input-group" *ngFor="let resposta of pergunta.respostas">
               <div class="input-group-prepend mr-2">
                 <div class="input-group-radio">
@@ -55,23 +63,32 @@
           </div>
           <div class="card-footer">
             <div *ngIf="finalizado">
-              <h6>Resposta correta: {{pergunta.correta}}</h6>
+              <p> <strong> Resposta correta:</strong> <br>
+                {{pergunta.correta}}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <hr>
-    <div class="row">
-      <div class="col-md mb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <hr>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 mb-5">
         <button class="btn btn-info float-right" type="submit">Finalizar</button>
         <button class="btn btn-light float-right mr-2" type="reset">Limpar</button>
       </div>
     </div>
   </form>
-  <hr />
-  <div class="row mb-5">
-    <div class="col-md">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <hr>
+    </div>
+  </div>
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-8">
       <div class="card" *ngIf="finalizado">
         <div class="card-body">
           <h1>Você acertou {{this.scoreFinal.toPrecision(2)}}% das questões.</h1>

@@ -39,6 +39,7 @@ export class AppComponent implements OnInit {
 
   onChange(qtdPerguntas) {
     this.listaPerguntas(parseInt(qtdPerguntas));
+    this.quantidadePerguntas = qtdPerguntas;
   }
 
   public calcularRespostas() {

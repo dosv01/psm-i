@@ -411,5 +411,23 @@
     ],
     "correta": "The entire Scrum Team",
     "resposta": ""
+  },
+  {
+    "id": 39,
+    "pergunta": "Which statement is an incorrect assessment of the product owner?",
+    "respostas": [
+      "The product owner plays a dual role: product owner and scrum master", "The product owner is the only person responsible for the product backlog", "The product owner prioritizes the product backlog", "The product owner is one person and not a committee"
+    ],
+    "correta": "The product owner plays a dual role: product owner and scrum master",
+    "resposta": ""
+  },
+  {
+    "id": 40,
+    "pergunta": "When does scrum team membership change? ",
+    "respostas": [
+      "As needed, while taking into account short term reduction in productivity", "Every Sprint, to promote team learning", "Never, because it reduces productivity", "Whenever management tells the scrum team"
+    ],
+    "correta": "As needed, while taking into account short term reduction in productivity",
+    "resposta": ""
   }
 ]

@@ -24,3 +24,7 @@
 .wrongAnswer {
   background-color: #EDC1BB;
 }
+
+body {
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+}
