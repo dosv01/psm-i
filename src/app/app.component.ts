@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'psm-i-quiz';
+  title = 'psm';
   private _jsonURL = 'assets/perguntas.json';
   perguntas: any = [];
   totalPerguntas = 0;
