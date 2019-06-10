@@ -63,7 +63,10 @@ export class AppComponent implements OnInit {
     });
 
     if (score != 0) {
-      this.scoreFinal = (score / this.perguntas.length) * 100;
+      this.scoreFinal = (score / parseInt(this.perguntas.length)) * 100;
+      console.log('this.scoreFinal');
+      console.log(this.scoreFinal);
+      
     }
     this.finalizado = true;
     // alert("Você acertou " + this.scoreFinal.toPrecision(2) + "% das questões.");

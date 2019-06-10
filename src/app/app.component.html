@@ -13,7 +13,7 @@
     <div class="col-md-8">
       <h5>{{totalPerguntas}} questions (and counting!)</h5>
       <p><strong> Created by:</strong> Danilo Santos and Matheus Pereira</p>
-      <p><strong>Questions include by:</strong> Danilo Santos</p>
+      <p><strong>Questions included by:</strong> Danilo Santos</p>
     </div>
   </div>
   <div class="row justify-content-center">
@@ -61,8 +61,8 @@
               {{resposta}}
             </div>
           </div>
-          <div class="card-footer">
-            <div *ngIf="finalizado">
+          <div class="card-footer" *ngIf="finalizado">
+            <div>
               <p> <strong> Right answer:</strong> <br>
                 {{pergunta.correta}}</p>
             </div>
@@ -77,8 +77,8 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-md-8 mb-5">
-        <button class="btn btn-info float-right" type="submit">Finalizar</button>
-        <button class="btn btn-light float-right mr-2" type="reset">Limpar</button>
+        <button class="btn btn-info float-right" type="submit">End Assess</button>
+        <button class="btn btn-light float-right mr-2" type="reset">Clean</button>
       </div>
     </div>
   </form>
@@ -94,7 +94,7 @@
     <div class="card-body">
       Total: {{quantidadePerguntas}} <br>
       <div *ngIf="finalizado">
-        Score: {{this.scoreFinal.toPrecision(2)}}%.
+        Score: {{this.scoreFinal}}%.
       </div>
     </div>
 
