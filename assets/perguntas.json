@@ -414,13 +414,16 @@
   },
   {
     "id": 39,
-    "pergunta": "Which statement is an incorrect assessment of the product owner?",
+    "pergunta": "Which of the following statements best describes product backlog items?",
     "respostas": [
-      "The product owner plays a dual role: product owner and scrum master", "The product owner is the only person responsible for the product backlog", "The product owner prioritizes the product backlog", "The product owner is one person and not a committee"
+      "Undefined or poorly defined product backlog items should be placed on the product backlog with low priority",
+      "All product backlog items are the result of a(n) analysis, requirements and/or design phase(s)",
+      "Undefined or poorly defined product backlog items should be kept out from the product backlog until sufficient detail is known",
+      "Every product backlog item, whether low priority or high priority, should possess sufficient detail for the team to complete in a sprint"
     ],
-    "correta": "The product owner plays a dual role: product owner and scrum master",
+    "correta": "Undefined or poorly defined product backlog items should be placed on the product backlog with low priority",
     "resposta": ""
-  },
+  },  
   {
     "id": 40,
     "pergunta": "When does scrum team membership change?",
@@ -434,7 +437,7 @@
     "id": 41,
     "pergunta": "Which best describes the product backlog",
     "respostas": [
-      "It is allowed to grow and change as more is learned about the product and its customers", "It is baselined to follow change management processes", " It provides just enough information to enable a scrum team to start the design phase of a product", "It contains all foreseeable tasks and requirements from which the scrum team can develop and maintain a complete project plan"
+      "It is allowed to grow and change as more is learned about the product and its customers", "It is baselined to follow change management processes", "It provides just enough information to enable a scrum team to start the design phase of a product", "It contains all foreseeable tasks and requirements from which the scrum team can develop and maintain a complete project plan"
     ],
     "correta": "It is allowed to grow and change as more is learned about the product and its customers",
     "resposta": ""
@@ -517,7 +520,7 @@
       "It is when the scrum team and stakeholders inspect the outcome of the sprint and figure out what to do in the upcoming sprint",
       "It is a demo at the end of the sprint for everyone in the organization to provide feedback on the work done",
       "It is a review of the team's activities during the sprint",
-      "It is used to congratulate the sevelopment team if it did what it committed to doing, or to punish the development team if it failed to meet its commitments"
+      "It is used to congratulate the development team if it did what it committed to doing, or to punish the development team if it failed to meet its commitments"
     ],
     "correta": "It is when the scrum team and stakeholders inspect the outcome of the sprint and figure out what to do in the upcoming sprint",
     "resposta": ""
@@ -699,18 +702,6 @@
       "A sprint is a specific amount of days for a team to work as many hours as needed to finish assigned work"
     ],
     "correta": "A sprint is a specific amount of days for a team to work at a sustainable pace to finish select work",
-    "resposta": ""
-  },
-  {
-    "id": 64,
-    "pergunta": "Which of the following statements best describes product backlog items?",
-    "respostas": [
-      "Undefined or poorly defined product backlog items should be placed on the product backlog with low priority",
-      "All product backlog items are the result of a(n) analysis, requirements and/or design phase(s)",
-      "Undefined or poorly defined product backlog items should be kept out from the product backlog until sufficient detail is known",
-      "Every product backlog item, whether low priority or high priority, should possess sufficient detail for the team to complete in a sprint"
-    ],
-    "correta": "Undefined or poorly defined product backlog items should be placed on the product backlog with low priority",
     "resposta": ""
   }
 ]
