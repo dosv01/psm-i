@@ -11,19 +11,19 @@
   </div>
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <h5>{{totalPerguntas}} questões (e contando!)</h5>
-      <p><strong> Elaborado por:</strong> Danilo Santos e Matheus Pereira</p>
-      <p><strong>Perguntas incluídas por:</strong> Danilo Santos</p>
+      <h5>{{totalPerguntas}} questions (and counting!)</h5>
+      <p><strong> Created by:</strong> Danilo Santos and Matheus Pereira</p>
+      <p><strong>Questions include by:</strong> Danilo Santos</p>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <label for="exampleFormControlSelect1">Qtd Questões</label>
+      <label for="exampleFormControlSelect1">Number of Questions</label>
       <select class="form-control" id="exampleFormControlSelect1" (ngModel)="quantidadePerguntas"
         (change)="onChange($event.target.value)" style="width:auto;">
         <option>20</option>
         <option>40</option>
-        <option>90</option>
+        <option selected>All</option>
       </select>
     </div>
   </div>
@@ -44,10 +44,10 @@
         <div class="card mb-3" *ngFor="let pergunta of perguntas; let i = index">
           <div class="card-header"
             [ngClass]="{'rightAnswer': (finalizado == true && pergunta.resposta === pergunta.correta), 'wrongAnswer': (finalizado == true && pergunta.resposta !== pergunta.correta)  }">
-            <h5>Questão {{i+1}} de {{quantidadePerguntas}}</h5>
+            <h5>Question {{i+1}} of {{quantidadePerguntas}}</h5>
           </div>
           <div class="card-body">
-            <div>
+            <div style="white-space: pre-wrap">
               {{pergunta.pergunta}}
               <hr style="border-top: dotted 1px  #ccc;">
             </div>
@@ -63,7 +63,7 @@
           </div>
           <div class="card-footer">
             <div *ngIf="finalizado">
-              <p> <strong> Resposta correta:</strong> <br>
+              <p> <strong> Right answer:</strong> <br>
                 {{pergunta.correta}}</p>
             </div>
           </div>
@@ -87,24 +87,14 @@
       <hr>
     </div>
   </div>
-  <div class="row justify-content-center mb-5">
-    <div class="col-md-8">
-      <div class="card" *ngIf="finalizado">
-        <div class="card-body">
-          <h1>Você acertou {{this.scoreFinal.toPrecision(2)}}% das questões.</h1>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <div class="divResult">
   <div class="card">
-    <div class="card-header">Resumo</div>
+    <div class="card-header">Summary</div>
     <div class="card-body">
       Total: {{quantidadePerguntas}} <br>
-      Respondidas:
       <div *ngIf="finalizado">
-        Nota: {{this.scoreFinal.toPrecision(2)}}%.
+        Score: {{this.scoreFinal.toPrecision(2)}}%.
       </div>
     </div>
 

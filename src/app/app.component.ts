@@ -16,28 +16,39 @@ export class AppComponent implements OnInit {
   i: number = 0;
   scoreFinal = 0;
   finalizado = false;
-  quantidadePerguntas = 20;
+  quantidadePerguntas = 0;
 
   ngOnInit() {
   }
 
   constructor(private http: HttpClient) {
-    this.listaPerguntas(this.quantidadePerguntas);
+    this.listaPerguntas();
+    this.quantidadePerguntas = this.totalPerguntas;
   }
 
   public getJSON(): Observable<any> {
     return this.http.get(this._jsonURL);
   }
 
-  public listaPerguntas(qtd) {
+  public listaPerguntas(qtd?) {
     this.getJSON().subscribe(data => {
-      console.log(data);
       this.totalPerguntas = data.length;
-      this.perguntas = this.shuffle(data).slice(0, qtd);
+      if (qtd == 'All' || qtd === undefined) {
+        this.quantidadePerguntas = this.totalPerguntas;
+      } else {
+        this.quantidadePerguntas = qtd;
+      }
+      this.perguntas = this.shuffle(data).slice(0, this.quantidadePerguntas);
+      this.perguntas.forEach(pergunta => {
+        pergunta.respostas = this.shuffle(pergunta.respostas);
+      });
     });
   }
 
   onChange(qtdPerguntas) {
+    if (qtdPerguntas === 'All') {
+      qtdPerguntas = this.totalPerguntas;
+    }
     this.listaPerguntas(parseInt(qtdPerguntas));
     this.quantidadePerguntas = qtdPerguntas;
   }
