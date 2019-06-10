@@ -423,7 +423,7 @@
     ],
     "correta": "Undefined or poorly defined product backlog items should be placed on the product backlog with low priority",
     "resposta": ""
-  },  
+  },
   {
     "id": 40,
     "pergunta": "When does scrum team membership change?",
@@ -702,6 +702,18 @@
       "A sprint is a specific amount of days for a team to work as many hours as needed to finish assigned work"
     ],
     "correta": "A sprint is a specific amount of days for a team to work at a sustainable pace to finish select work",
+    "resposta": ""
+  },
+  {
+    "id": 64,
+    "pergunta": "The Scrum Master as a Servant Leader is in service to which of the following?",
+    "respostas": [
+      "The Development Team",
+      "The Organization",
+      "The Product Owner and the Development Team",
+      "The Organization, the Product Owner and the Development Team"
+    ],
+    "correta": "The Organization, the Product Owner and the Development Team",
     "resposta": ""
   }
 ]
