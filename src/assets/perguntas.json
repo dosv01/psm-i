@@ -715,5 +715,122 @@
     ],
     "correta": "The Organization, the Product Owner and the Development Team",
     "resposta": ""
+  },
+  {
+    "id": 65,
+    "pergunta": "When do Development Team members take ownership of a Sprint Backlog item?",
+    "respostas": [
+      "During the Daily Scrum",
+      "Whenever a team member can accommodate more work",
+      "At the Sprint Planning meeting",
+      "Never. All Sprint Backlog Items are 'owned' by the entire Development Team, even though each one may be done by an individual Development Team member."
+    ],
+    "correta": "Never. All Sprint Backlog Items are 'owned' by the entire Development Team, even though each one may be done by an individual Development Team member.",
+    "resposta": ""
+  },
+  {
+    "id": 66,
+    "pergunta": "For the purpose of transparency, when does Scrum say a new increment of working software must be available?",
+    "respostas": [
+      "Before the release Sprint",
+      "Every 3 Sprints",
+      "At the end of every Sprint",
+      "When the Product Owner asks to create one."
+    ],
+    "correta": "At the end of every Sprint",
+    "resposta": ""
+  },
+  {
+    "id": 67,
+    "pergunta": "Who must attend the Daily Scrum?",
+    "respostas": [
+      "The Development Team and the Scrum Master",
+      "The Development Team and the Product Owner",
+      "The Scrum Team",
+      "The Development Team"
+    ],
+    "correta": "The Development Team",
+    "resposta": ""
+  },
+  {
+    "id": 68,
+    "pergunta": "What activities would a Product Owner typically undertake in the phase between the end of the current Sprint and the start of the next Sprint?",
+    "respostas": [
+      "Update the project plan with stakeholders",
+      "Refine the Product Backlog",
+      "There are no such activities, the next Sprint starts immediately after the current Sprint",
+      "Work with the QA department on the increment of the current Sprint"
+    ],
+    "correta": "There are no such activities, the next Sprint starts immediately after the current Sprint",
+    "resposta": ""
+  },
+  {
+    "id": 69,
+    "pergunta": "Cross-functional teams are optimized to work on one technical layer of a system only (e.g. GUI, database, middle tier, interfaces).",
+    "respostas": [
+      "True",
+      "False"
+    ],
+    "correta": "False",
+    "resposta": ""
+  },
+  {
+    "id": 70,
+    "pergunta": "What enhances the transparency of an Increment?",
+    "respostas": [
+      "Doing all work needed to meet the 'Definition of Done'",
+      "Keeping track of and estimating all undone work to be completed in a separate Sprint",
+      "Updating Sprint tasks properly in the electronic tracking tool",
+      "Reporting Sprint progress to the stakeholders daily"
+    ],
+    "correta": "Doing all work needed to meet the 'Definition of Done'",
+    "resposta": ""
+  },
+  {
+    "id": 71,
+    "pergunta": "When is a Product Backlog item considered done?",
+    "respostas": [
+      "When all work in the Sprint Backlog related to the item is finished",
+      "When the item has no work remaining in order to be released",
+      "When QA reports that the item passes all acceptance criteria",
+      "At the end of the Sprint"
+    ],
+    "correta": "When the item has no work remaining in order to be released",
+    "resposta": ""
+  },
+  {
+    "id": 72,
+    "pergunta": "Which of the following is required by Scrum?",
+    "respostas": [
+      "Release Planning",
+      "Sprint Retrospective",
+      "Sprint Burndown Chart",
+      "Members must stand up at the Daily Scrum",
+      "All of the above"
+    ],
+    "correta": "Sprint Retrospective",
+    "resposta": ""
+  },
+  {
+    "id": 73,
+    "pergunta": "Multiple Scrum Teams working on the same project must have the same Sprint start date.",
+    "respostas": [
+      "True",
+      "False"
+    ],
+    "correta": "False",
+    "resposta": ""
+  },
+  {
+    "id": 74,
+    "pergunta": "What is the time-box for the Sprint Planning meeting?",
+    "respostas": [
+      "Whenever it is done",
+      "4 hours for a monthly Sprint",
+      "Monthly",
+      "8 hours for a monthly Sprint"
+    ],
+    "correta": "8 hours for a monthly Sprint",
+    "resposta": ""
   }
 ]

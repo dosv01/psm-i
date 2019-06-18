@@ -5,33 +5,35 @@
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <hr>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <h5>{{totalPerguntas}} questions (and counting!)</h5>
       <p><strong> Created by:</strong> Danilo Santos and Matheus Pereira</p>
       <p><strong>Questions included by:</strong> Danilo Santos</p>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-md-8">
-      <label for="exampleFormControlSelect1">Number of Questions</label>
+    <div class="col-md-12">
+      <label for="exampleFormControlSelect1">Number of Questions in Exam</label>
       <select class="form-control" id="exampleFormControlSelect1" (ngModel)="quantidadePerguntas"
         (change)="onChange($event.target.value)" style="width:auto;">
         <option>20</option>
+        <option>30</option>
         <option>40</option>
         <option selected>All</option>
       </select>
     </div>
   </div>
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <hr>
     </div>
   </div>
+  <br />
   <form class="form" (submit)="calcularRespostas()">
     <!-- <div class="row justify-content-center mb-5">
       <div class="col-md-8">
@@ -40,15 +42,15 @@
       </div>
     </div> -->
     <div class="row justify-content-center">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <div class="card mb-3" *ngFor="let pergunta of perguntas; let i = index">
           <div class="card-header"
             [ngClass]="{'rightAnswer': (finalizado == true && pergunta.resposta === pergunta.correta), 'wrongAnswer': (finalizado == true && pergunta.resposta !== pergunta.correta)  }">
-            <h5>Question {{i+1}} of {{quantidadePerguntas}}</h5>
+            <h4>Question {{i+1}} of {{quantidadePerguntas}}</h4>
           </div>
           <div class="card-body">
             <div style="white-space: pre-wrap">
-              {{pergunta.pergunta}}
+              <h6>{{pergunta.pergunta}}</h6>
               <hr style="border-top: dotted 1px  #ccc;">
             </div>
             <div class="input-group" *ngFor="let resposta of pergunta.respostas">
@@ -57,33 +59,33 @@
                   <input type="radio" name="{{pergunta.id}}" value="{{resposta}}" [(ngModel)]="pergunta.resposta"
                     (change)="changeFinalizado($event)">
                 </div>
+                &nbsp;{{resposta}}
               </div>
-              {{resposta}}
+              
             </div>
           </div>
           <div class="card-footer" *ngIf="finalizado">
-            <div>
-              <p> <strong> Right answer:</strong> <br>
-                {{pergunta.correta}}</p>
+            <div><strong> Right answer:</strong> <br>
+                {{pergunta.correta}}
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-8">
+      <div class="col-md-12">
         <hr>
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-8 mb-5">
-        <button class="btn btn-info float-right" type="submit">End Assess</button>
+      <div class="col-md-12 mb-5">
+        <button class="btn btn-info float-right" type="submit">Finalize Assess</button>
         <button class="btn btn-light float-right mr-2" type="reset">Clean</button>
       </div>
     </div>
   </form>
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <hr>
     </div>
   </div>
