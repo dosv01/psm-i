@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   scoreFinal = 0;
   finalizado = false;
   quantidadePerguntas = 0;
-
+  status = "Falha";
   ngOnInit() {
   }
 
@@ -64,6 +64,15 @@ export class AppComponent implements OnInit {
 
     if (score != 0) {
       this.scoreFinal = (score / parseInt(this.perguntas.length)) * 100;
+      this.scoreFinal = parseFloat(this.scoreFinal.toFixed(2));
+
+      if (this.scoreFinal > 85) {
+        this.status = "Sucesso";
+      } 
+      else{
+        this.status = "Falha";
+      }
+
       console.log('this.scoreFinal');
       console.log(this.scoreFinal);
       

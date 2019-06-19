@@ -12,8 +12,8 @@
   <div class="row justify-content-center">
     <div class="col-md-12">
       <h5>{{totalPerguntas}} questions (and counting!)</h5>
-      <p><strong> Created by:</strong> Danilo Santos and Matheus Pereira</p>
-      <p><strong>Questions included by:</strong> Danilo Santos</p>
+      <p><strong> Created by:</strong> Danilo Santos, Matheus Pereira and Estefano Silva</p>
+      <p><strong>Questions included by:</strong> Danilo Santos and Estefano Silva</p>
     </div>
   </div>
   <div class="row justify-content-center">
@@ -94,9 +94,12 @@
   <div class="card">
     <div class="card-header">Summary</div>
     <div class="card-body">
-      Total: {{quantidadePerguntas}} <br>
+      Total: {{quantidadePerguntas}} 
       <div *ngIf="finalizado">
         Score: {{this.scoreFinal}}%.
+      </div>
+      <div *ngIf="finalizado">
+        <h4>Resultado: {{this.status}}</h4>
       </div>
     </div>
 
