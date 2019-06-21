@@ -832,5 +832,94 @@
     ],
     "correta": "8 hours for a monthly Sprint",
     "resposta": ""
+  },
+  {
+    "id": 75,
+    "pergunta": "When a Development Team is having trouble delivering a working increment because they don't understand a functional requirement, what should they do?",
+    "respostas": [
+      "Add a specialist to the Development Team",
+      "Collaborate with the Product Owner to determine what is possible and acceptable",
+      "Partially complete the functionality, and discuss the remaining work at the Sprint Review",
+      "Defer the work to a more appropriate Sprint"
+    ],
+    "correta": "Collaborate with the Product Owner to determine what is possible and acceptable",
+    "resposta": ""
+  },
+  {
+    "id": 76,
+    "pergunta": "The Product Owner determines how many Product Backlog items the Development Team selects for a Sprint.",
+    "respostas": [
+      "True, accordingly to what was committed to the stakeholders",
+      "True, but only after confirmation by the resource manager that the team has enough capacity",
+      "True",
+      "False - the Scrum Master does that",
+      "False",
+      "False, capacity and commitment are the project managerÂ´s responsibility"
+    ],
+    "correta": "False",
+    "resposta": ""
+  },
+  {
+    "id": 77,
+    "pergunta": "Who should make sure everyone on the Development Team does his or her tasks for the Sprint?",
+    "respostas": [
+      "The Development Team",
+      "The Product Owner",
+      "The project manager",
+      "The Scrum Master",
+      "All of the above"
+    ],
+    "correta": "The Development Team",
+    "resposta": ""
+  },
+  {
+    "id": 78,
+    "pergunta": "What is the accountability of the Product Owner during Sprint 0?",
+    "respostas": [
+      "There is no such thing as Sprint 0",
+      "Determine the composition of the Development Teams so they have the capacity to deliver the completed forecast",
+      "Make the complete project plan to commit date, budget and scope to the stakeholders",
+      "Gathering, eliciting, and analyzing the requirements that will be inserted into the Product Backlog",
+      "Make sure enough Product Backlog items are refined to fill the first 3 Sprints"
+    ],
+    "correta": "There is no such thing as Sprint 0",
+    "resposta": ""
+  },
+  {
+    "id": 79,
+    "pergunta": "A Product Owner wants advice from the Scrum Master about estimating work in Scrum. Which of these is the guideline that a Scrum Master should give?",
+    "respostas": [
+      "Estimates are made by the Development Team",
+      "Estimates are made by the Product Owner, but are best checked with the Development Team",
+      "Product backlog items must be estimated in story points",
+      "Scrum forbids estimating",
+      "Estimates must be in relative units"
+    ],
+    "correta": "Estimates are made by the Development Team",
+    "resposta": ""
+  },
+  {
+    "id": 80,
+    "pergunta": "How should the Development Team deal with non-functional requirements?",
+    "respostas": [
+      "Handle them during the integration Sprint preceding the release Sprint",
+      "Make sure the release department understands these requirements, but it is not the Development Team responsibility",
+      "Leave them for the lead developers on the team",
+      "Assure every Increment meets them"
+    ],
+    "correta": "Assure every Increment meets them",
+    "resposta": ""
+  },
+  {
+    "id": 81,
+    "pergunta": "When does the second Sprint start?",
+    "respostas": [
+      "Once the architectural changes for the second Sprint have been approved by the senior architect",
+      "After the customer completes acceptance testing of the first Sprint",
+      "After the Product Backlog for the second Sprint has been selected",
+      "Immediately after the first Sprint"
+    ],
+    "correta": "Immediately after the first Sprint",
+    "resposta": ""
   }
 ]
